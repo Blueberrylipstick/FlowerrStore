@@ -33,7 +33,7 @@ public class FlowerTest {
 
     @Test
     public void testFlower() {
-        Flower flower = new Flower();
-        Assertions.assertNotNull(flower);
+        Flower newFlower = new Flower();
+        Assertions.assertNotNull(newFlower);
     }
 }

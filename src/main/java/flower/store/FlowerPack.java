@@ -3,7 +3,7 @@ package flower.store;
 import lombok.Getter;
 
 @Getter
-public class FlowerPack{
+public class FlowerPack {
     private Flower flower;
     private int quantity;
 
@@ -16,7 +16,12 @@ public class FlowerPack{
         return this.flower.getPrice() * this.quantity;
     }
 
-    public void setQuantity(int quantity) {
-        this.quantity = quantity < 1 ? 1 : quantity;
+    public void setQuantity(int newQuantity) {
+        // this.quantity = newQuantity < 1 ? 1 : newQuantity;
+        if (newQuantity < 1) {
+            this.quantity = 1;
+        } else {
+            this.quantity = newQuantity;
+        }
     }
 }
