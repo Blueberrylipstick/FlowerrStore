@@ -7,7 +7,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 @Setter @Getter @AllArgsConstructor @ToString @NoArgsConstructor
-public class Flower extends Item{
+public class Flower extends Item {
 //    @Getter
     private double sepalLength;
     private FlowerColor color;
